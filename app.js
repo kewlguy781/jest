@@ -25,6 +25,13 @@ export const doubleArray = (arr) =>{
     return num*2;
   });
 }
+// return array with all even numbers
+// evensOnlyArray(numberArray) // => [2,4];  hint use filter 
+
+export const evensOnlyArray = (arr) =>{
+  return arr.filter(n => n % 2 === 0)
+}
+
 
 // // return array with all even numbers
 // evensOnlyArray(numberArray) // => [2,4];  hint use filter 
