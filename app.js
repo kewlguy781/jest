@@ -25,13 +25,6 @@ export const doubleArray = (arr) =>{
     return num*2;
   });
 }
-// return array with all even numbers
-// evensOnlyArray(numberArray) // => [2,4];  hint use filter 
-
-export const evensOnlyArray = (arr) =>{
-  return arr.filter(n => n % 2 === 0)
-}
-
 
 // // return array with all even numbers
 // evensOnlyArray(numberArray) // => [2,4];  hint use filter 
@@ -59,13 +52,45 @@ export const allNumbersGreaterThanZero = (arr) =>{
 // someNumbersAreOdd(numberArray) // => true; use some
 
 export const someNumbersAreOdd = (arr) =>{
-  return arr.some(n=> n % 2 !== 0)
+  return arr.some(n => n % 2 !== 0)
 }
-
-
 
 // // return array double and even
 // evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter
+
+export const evensOnlyAndDoubleArray = arr => { 
+  
+  return arr.filter(num => num % 2 === 0).map(num => num * 2)
+}
+
+// My attempt:
+// export const evensOnlyAndDoubleArray = (arr) =>{
+//    arr.filter(n => n % 2 === 0) 
+//    return arr.map((num)=>{ 
+//       return num * 2
+//     }
+//      )
+// }
+
+
+// TA's solutions
+// const evensOnlyAndDoubleArray = (arr) => {
+
+//   const evensArr = arr.filter(n => n % 2 === 0); // -> turns into new array
+//     //console.log(evensArr) // -> [2, 4]
+//    return evensArr.map(num => num * 2)
+   
+// }
+
+// export function evensOnlyAndDoubleArray(numberArray) {
+//   return numberArray
+//     .filter(function (number) {
+//       return number % 2 == 0;
+//     })
+//     .map(function (number) {
+//       return number * 2;
+//     });
+// }
 
 // // find an item method return 'not found' if not found
 // findItem(numberArray, 1) //=> 1
