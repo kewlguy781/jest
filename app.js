@@ -26,18 +26,36 @@ export const doubleArray = (arr) =>{
   });
 }
 
-
 // // return array with all even numbers
 // evensOnlyArray(numberArray) // => [2,4];  hint use filter 
+export const evensOnlyArray = (arr) =>{
+  return arr.filter(n=> n % 2 === 0)
+}
 
 // // return array with sum of numbers
 // arraySum(numberArray) // => 10;  hint use reduce
 
+export const arraySum = (arr) =>{
+  return arr.reduce((a,b)=> a + b, 0)
+}
+
 // // return true if every item greater than 0
 // allNumbersGreaterThanZero(numberArray) // => true; use every
 
+export const allNumbersGreaterThanZero = (arr) =>{
+  return arr.every((a)=>{
+    return a > 0
+  })
+}
+
 // // return true if one or more items in array are odd
 // someNumbersAreOdd(numberArray) // => true; use some
+
+export const someNumbersAreOdd = (arr) =>{
+  return arr.some(n=> n % 2 !== 0)
+}
+
+
 
 // // return array double and even
 // evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter
