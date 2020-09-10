@@ -1,19 +1,3 @@
-export const originalArray = (arr) =>{
-  return arr
-}
-
-// // return array with double values in array
-// doubleArray(numberArray) // => [2,4,6,8];  hint use map 
-export const doubleArray = (arr){
-  return  arr.map((num) =>{
-       return num *2;
-   });
-  }
-  
-   // // return array with all even numbers
-// evensOnlyArray(numberArray) // => [2,4];  hint use filter 
-
-
 // // EXPORT ALL AS FUNCTIONS AND KEEP THE NAMES THE SAME
 
 // // ways to export
@@ -28,10 +12,27 @@ export const doubleArray = (arr){
 
 
 // // ARRAY ITERATOR METHODS
-// numberArray = [1,2,3,4]
+let numberArray = [1,2,3,4]
+export const originalArray = (arr) =>{
+  return arr
+}
+
 
 // // return array with double values in array
 // doubleArray(numberArray) // => [2,4,6,8];  hint use map 
+export const doubleArray = (arr) =>{
+  return arr.map((num)=>{
+    return num*2;
+  });
+}
+// return array with all even numbers
+// evensOnlyArray(numberArray) // => [2,4];  hint use filter 
+
+export const evensOnlyArray = (arr) =>{
+  return arr.filter(n => n % 2 === 0)
+}
+
+
 
 // // return array with all even numbers
 // evensOnlyArray(numberArray) // => [2,4];  hint use filter 
